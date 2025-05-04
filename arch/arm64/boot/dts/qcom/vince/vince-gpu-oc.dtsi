@@ -14,21 +14,17 @@
 &clock_gcc_gfx {
 	qcom,gfxfreq-corner =
 		 <         0   0 >,
-		 < 133330000   1 >,  /* Min SVS   */
-		 < 216000000   2 >,  /* Low SVS   */
-		 < 320000000   3 >,  /* SVS       */
 		 < 400000000   4 >,  /* SVS Plus  */
 		 < 510000000   5 >,  /* NOM       */
 		 < 560000000   6 >,  /* Nom Plus  */
 		 < 650000000   7 >,  /* Turbo     */
-		 < 700000000   7 >,  /* Turbo     */
 		 < 725000000   7 >;  /* Turbo     */
 };
 
 &msm_gpu {
 
 	qcom,ca-target-pwrlevel = <4>;
-	qcom,initial-pwrlevel = <7>;
+	qcom,initial-pwrlevel = <0>;
 	/delete-node/qcom,gpu-pwrlevels;
 
 	/* Power levels */
